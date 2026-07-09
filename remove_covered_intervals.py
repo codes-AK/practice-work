@@ -1,6 +1,8 @@
 class Solution:
     def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:
         intervals.sort(key=lambda x: (x[0], -x[1]))
+
+
         
         count = 0
         curr_max_end = 0
